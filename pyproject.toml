@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "commentsbot"
+version = "0.1.0"
+description = ""
+authors = ["Partur-dev <parturtwo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+bot = "commentsbot.main:main"
+
+[tool.pyright]
+reportMissingParameterType = false
+typeCheckingMode = "standard"
+pythonVersion = "3.12"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-telegram-bot = "^21.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
